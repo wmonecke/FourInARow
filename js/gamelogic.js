@@ -32,8 +32,8 @@ ConnectFour.prototype.playChecker = function (columnNumber) {
     if (this.board[i][columnNumber] === null) {
       playerPositionFound = i;
       break;
-    }
-  }
+    }  //  |
+  } // <--??
 
   // If never found position, column is full.
   // INVALID MOVE
@@ -50,6 +50,7 @@ ConnectFour.prototype.playChecker = function (columnNumber) {
   }
 
   this._checkWinner();
+  console.log('Winner :' + this.winner);
 
   return true;
 };
