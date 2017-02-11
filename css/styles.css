@@ -1,0 +1,122 @@
+body {
+  font-family: arial;
+  font-weight: 100;
+  background: linear-gradient(135deg, rgba(127,213,237,1) 5%,rgba(144,227,242,1) 16%,rgba(144,227,242,1) 21%,rgba(144,227,242,1) 30%,rgba(144,227,242,1) 30%,rgba(194,168,226,1) 77%);
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 770px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 63px;
+  float: right;
+  position: relative;
+  top: 12px;
+}
+
+h2 {
+  /* will be shown with JS */
+  visibility: hidden;
+
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 3px;
+  padding: 5px 20px;
+  font-size: 30px;
+}
+
+.player-1 {
+  color: lightgreen;
+  background-color: white;
+  transition: color .5s ease;
+}
+
+.player-2 {
+  color: #f85487;
+  background-color: white;
+  transition: color .5s ease;
+}
+
+.drop-buttons {
+  /* will be shown with JS */
+  visibility: hidden;
+  margin: 7px 0;
+  overflow: auto;
+}
+
+.button-wrapper {
+  float: left;
+  text-align: center;
+  width: 110px;
+  box-sizing: border-box;
+}
+
+.drop-buttons button {
+  background-color: transparent;
+  border: 3px solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.turn-player-1 button {
+  border-color: lightgreen;
+  background-color: lightgreen;
+  transition: background-color .6s ease-in-out;
+  transition: border-color .6s ease-in-out;
+  outline: none;
+}
+
+.turn-player-1 button:hover {
+  background-color: #66b873;
+  border-color: #66b873;
+  color: white;
+}
+
+.turn-player-2 button {
+  border-color: #f85487;
+  background-color: #f85487;
+  transition: background-color .5s ease-in-out;
+  outline: none;
+}
+
+.turn-player-2 button:hover {
+  background-color: #da78be;
+  border-color: #da78be;
+  color: white;
+}
+
+.square {
+  float: left;
+  border: 2px solid white;
+  padding: 10px;
+  width: 110px;
+  height: 110px;
+  box-sizing: border-box;
+}
+
+.slot {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.checker-player-1 {
+  border-color: lightgreen;
+  background-color: lightgreen;
+}
+
+.checker-player-2 {
+  border-color: #f85487;
+  background-color: #f85487;
+}
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
